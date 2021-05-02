@@ -1,7 +1,10 @@
 <script>
 	import Fa from 'svelte-fa'
-	import { faAddressBook,faAddressCard,faAsterisk,faAward,faBan,faBath,faBed,faBell,faBellSlash,faBinoculars,faBook,faBookmark,faBookOpen,faBookReader,faCalendar,faCalendarAlt,faCalendarCheck,faCalendarDay,faCalendarMinus,faCalendarPlus,faCalendarTimes,faCalendarWeek,faCamera,faCameraRetro,faCertificate,faClipboard,faClipboardCheck,faClipboardList,faCog,faEdit,faExclamation,faExclamationCircle,faExclamationTriangle,faFlag,faFaucet,faHome,faInfo,faPencilAlt,faSave,faTasks,faToilet,faToiletPaper,faToiletPaperSlash,faVideo,faVideoSlash } from '@fortawesome/free-solid-svg-icons'
+	import { faAddressBook,faAddressCard,faAsterisk,faAward,faBan,faBell,faBellSlash,faBinoculars,faBook,faBookmark,faBookOpen,faBookReader,faCalendar,faCalendarAlt,faCalendarCheck,faCalendarDay,faCalendarMinus,faCalendarPlus,faCalendarTimes,faCalendarWeek,faCamera,faCameraRetro,faCertificate,faClipboard,faClipboardCheck,faClipboardList,faCog,faEdit,faExclamation,faExclamationCircle,faExclamationTriangle,faFlag,faFaucet,faHome,faInfo,faPencilAlt,faSave,faTasks,faToilet,faToiletPaper,faToiletPaperSlash,faVideo,faVideoSlash } from '@fortawesome/free-solid-svg-icons'
 	import { faComment,faCommentDots,faCommentAlt,faComments,faQuoteLeft,faQuoteRight } from '@fortawesome/free-solid-svg-icons'
+	import { faDesktop,faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+	//Housing
+	import { faBath, faBed, faBrush, faFireExtinguisher } from '@fortawesome/free-solid-svg-icons'
 </script>
 
 <main>
@@ -10,7 +13,7 @@
 
 <article>
 	<h1>Icons</h1>
-	<section>
+	<section id="home">
 		<h1>Home</h1>
 		<div style="font-size: 2em; color: var(--followup-action-color)">
 			<Fa icon={faHome}/>
@@ -59,7 +62,7 @@
 	<section>
 		<h2>Criteria</h2>
 	</section>
-	<section>
+	<section id="followup-actions">
 		<h1>Followup Actions</h1>
 		<div class="horziontal">
 			<div style="font-size: 2em; color: var(--followup-action-color)">
@@ -162,9 +165,16 @@
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Save">
 				<Fa icon={faSave}/>
 			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Desktop">
+				<Fa icon={faDesktop}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Mobile">
+				<Fa icon={faMobileAlt}/>
+			</div>
 		</div>
 	</section>
-	<section>
+	<a name="calendar">calendar</a>
+	<section id="calendar">
 		<h1>Calendar</h1>
 		<div class="horziontal">
 			<div style="font-size: 2em; color: var(--followup-action-color)">
@@ -194,7 +204,8 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<a name="comments">comments</a>
+	<section id="comments">
 		<h1>Comments</h1>
 		<div class="horziontal">
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Comment">
@@ -217,14 +228,23 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<a name="housing">housing</a>
+	<section id="housing">
 		<h1>Housing</h1>
 		<div class="horziontal">
-			<div style="font-size: 2em; color: var(--followup-action-color)">
+
+
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Bath">
 				<Fa icon={faBath}/>
 			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Bed">
 				<Fa icon={faBed}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Brush">
+				<Fa icon={faBrush}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Fire Extinguisher">
+				<Fa icon={faFireExtinguisher}/>
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Toilet">
 				<Fa icon={faToilet}/>
