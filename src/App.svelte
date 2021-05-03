@@ -1,19 +1,23 @@
 <script>
 	import Fa from 'svelte-fa'
 	import { faAddressBook,faAddressCard,faAsterisk,faAward,faBan,faBell,faBellSlash,faBinoculars,faBook,faBookmark,faBookOpen,faBookReader,faCalendar,faCalendarAlt,faCalendarCheck,faCalendarDay,faCalendarMinus,faCalendarPlus,faCalendarTimes,faCalendarWeek,faCamera,faCameraRetro,faCertificate,faClipboard,faClipboardCheck,faClipboardList,faCog,faEdit,faExclamation,faExclamationCircle,faExclamationTriangle,faFlag,faFaucet,faHome,faInfo,faPencilAlt,faSave,faTasks,faToilet,faToiletPaper,faToiletPaperSlash,faVideo,faVideoSlash } from '@fortawesome/free-solid-svg-icons'
+	//Followup Actions
+	import { faFileImage,faImage, faImages } from '@fortawesome/free-solid-svg-icons'
+	//Users
+	import { faUsers, faUsersCog, faUser,faUserCog,faUserAlt,faUserCircle,faUserCheck } from '@fortawesome/free-solid-svg-icons'
 	//Comments
 	import { faComment,faCommentDots,faCommentAlt,faComments,faQuoteLeft,faQuoteRight,faThumbsDown, faThumbsUp} from '@fortawesome/free-solid-svg-icons'
 	import { faDesktop,faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 	//Edit
-	import { faFilePdf, faTrash,faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+	import { faFilePdf, faSearch, faTrash,faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 	//Checklist
 	import { faList,faListAlt,faListOl,faListUl } from '@fortawesome/free-solid-svg-icons'
 	//House
-	import { faCat, faSpider, faWheelchair, faWifi, faShower} from '@fortawesome/free-solid-svg-icons'
+	import { faCat, faChair, faCouch, faKey, faLightbulb, faSpider, faWheelchair, faWifi, faShower, faTv} from '@fortawesome/free-solid-svg-icons'
 	import { faAccessibleIcon} from '@fortawesome/free-brands-svg-icons'
 	//Housing Construction
 	import { faBath, faBatteryEmpty, faBatteryFull,faBatteryHalf, faBatteryQuarter, faBatteryThreeQuarters, faBurn, faChargingStation,  faBed, faBrush,faDumpster, faDumpsterFire, faFireExtinguisher,faHammer,faHardHat,faPaintRoller, faScrewdriver, faSolarPanel, faTools, faToolbox, faTruckPickup, faWrench} from '@fortawesome/free-solid-svg-icons'
-	import { faFan, faLightbulb, faPlug, faPowerOff} from '@fortawesome/free-solid-svg-icons'
+	import { faFan, faPlug, faPowerOff} from '@fortawesome/free-solid-svg-icons'
 
 	// Landscaping
 	import { faLeaf,faSeedling,faSun,faCloudSun, faCloudSunRain,faWater } from '@fortawesome/free-solid-svg-icons'
@@ -86,7 +90,7 @@
 	<section>
 		<h2>Criteria</h2>
 	</section>
-	<section id="followup-actions"> , faThumbsUp
+	<section id="followup-actions">
 		<h1>Followup Actions</h1>
 		<div class="horziontal">
 			<div style="font-size: 2em; color: var(--followup-action-color)">
@@ -109,6 +113,46 @@
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Thumbs Up">
 				<Fa icon={faThumbsUp}/>
+			</div>
+		</div>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Camera">
+				<Fa icon={faCamera}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Images">
+				<Fa icon={faImages}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Image">
+				<Fa icon={faImage}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="File Image">
+				<Fa icon={faFileImage}/>
+			</div>
+		</div>
+	</section>
+	<section id="users">
+		<h1>Users</h1>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Users">
+				<Fa icon={faUsers}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Users Settings">
+				<Fa icon={faUsersCog}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User">
+				<Fa icon={faUser}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User Settings">
+				<Fa icon={faUserCog}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User Alt">
+				<Fa icon={faUserAlt}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User">
+				<Fa icon={faUserCircle}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User">
+				<Fa icon={faUserCheck}/>
 			</div>
 		</div>
 	</section>
@@ -207,6 +251,9 @@
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Save">
 				<Fa icon={faSave}/>
 			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Search">
+				<Fa icon={faSearch}/>
+			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Trash">
 				<Fa icon={faTrash}/>
 			</div>
@@ -277,11 +324,20 @@
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Cat">
 				<Fa icon={faCat}/>
 			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Spider">
-				<Fa icon={faSpider}/>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Chair">
+				<Fa icon={faChair}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Couch">
+				<Fa icon={faCouch}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="TV">
+				<Fa icon={faTv}/>
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Wifi}">
 				<Fa icon={faWifi}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Key">
+				<Fa icon={faKey}/>
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Wheel Chair">
 				<Fa icon={faWheelchair}/>
@@ -300,11 +356,23 @@
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Toilet">
 				<Fa icon={faToilet}/>
 			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Fan">
+				<Fa icon={faFan}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Plug">
+				<Fa icon={faPlug}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Lightbulb">
+				<Fa icon={faLightbulb}/>
+			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Toilet Paper">
 				<Fa icon={faToiletPaper}/>
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Toilet Paper Slash">
 				<Fa icon={faToiletPaperSlash}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Spider">
+				<Fa icon={faSpider}/>
 			</div>
 		</div>
 	</section>
