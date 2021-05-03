@@ -7,3 +7,5 @@ Food
 
 #Demo
 Deployed to https://svelte-icon-examples.netlify.app/
+
+[https://svelte-icon-examples.netlify.app/](https://svelte-icon-examples.netlify.app/)
