@@ -4,12 +4,13 @@
 	//Followup Actions
 	import { faFileImage,faImage, faImages } from '@fortawesome/free-solid-svg-icons'
 	//Users
-	import { faUsers, faUsersCog, faUser,faUserCog,faUserAlt,faUserCircle,faUserCheck } from '@fortawesome/free-solid-svg-icons'
+	import { faUsers, faUsersCog, faUser,faUserCog, faUserFriends, faUserAlt,faUserCircle,faUserCheck } from '@fortawesome/free-solid-svg-icons'
 	//Comments
 	import { faComment,faCommentDots,faCommentAlt,faComments,faQuoteLeft,faQuoteRight,faThumbsDown, faThumbsUp} from '@fortawesome/free-solid-svg-icons'
 	import { faDesktop,faMobileAlt } from '@fortawesome/free-solid-svg-icons'
 	//Edit
 	import { faFilePdf, faSearch, faTrash,faTrashAlt } from '@fortawesome/free-solid-svg-icons'
+	import { faPlus, faPlusCircle, faPlusSquare, faMinus, faMinusCircle, faMinusSquare } from '@fortawesome/free-solid-svg-icons'
 	//Checklist
 	import { faList,faListAlt,faListOl,faListUl } from '@fortawesome/free-solid-svg-icons'
 	//House
@@ -18,9 +19,12 @@
 	//Housing Construction
 	import { faBath, faBatteryEmpty, faBatteryFull,faBatteryHalf, faBatteryQuarter, faBatteryThreeQuarters, faBurn, faChargingStation,  faBed, faBrush,faDumpster, faDumpsterFire, faFireExtinguisher,faHammer,faHardHat,faPaintRoller, faScrewdriver, faSolarPanel, faTools, faToolbox, faTruckPickup, faWrench} from '@fortawesome/free-solid-svg-icons'
 	import { faFan, faPlug, faPowerOff} from '@fortawesome/free-solid-svg-icons'
-
 	// Landscaping
 	import { faLeaf,faSeedling,faSun,faCloudSun, faCloudSunRain,faWater } from '@fortawesome/free-solid-svg-icons'
+	// Spinners
+	import { faSpinner, faCircleNotch } from '@fortawesome/free-solid-svg-icons'
+	// Synch
+	import { faSync, faSyncAlt } from '@fortawesome/free-solid-svg-icons'
 </script>
 
 <main>
@@ -87,8 +91,13 @@
 			<Fa icon={faClipboardCheck}/>
 		</div>
 	</section>
-	<section>
-		<h2>Criteria</h2>
+	<section id="criteria">
+		<h1>Criteria</h1>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Info">
+				<Fa icon={faInfo}/>
+			</div>
+		</div>
 	</section>
 	<section id="followup-actions">
 		<h1>Followup Actions</h1>
@@ -144,6 +153,9 @@
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User Settings">
 				<Fa icon={faUserCog}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User Friends">
+				<Fa icon={faUserFriends}/>
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User Alt">
 				<Fa icon={faUserAlt}/>
@@ -236,7 +248,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="general-edit">
 		<h1>General - Edit</h1>
 		<div class="horziontal">
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Pdf">
@@ -259,6 +271,26 @@
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Trash">
 				<Fa icon={faTrashAlt}/>
+			</div>
+		</div>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Plus">
+				<Fa icon={faPlus}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Plus Circle">
+				<Fa icon={faPlusCircle}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Plus Square">
+				<Fa icon={faPlusSquare}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Minus">
+				<Fa icon={faMinus}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Minus Circle">
+				<Fa icon={faMinusCircle}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Minus Square">
+				<Fa icon={faMinusSquare}/>
 			</div>
 		</div>
 	</section>
@@ -482,6 +514,28 @@
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Water">
 				<Fa icon={faWater}/>
+			</div>
+		</div>
+	</section>
+	<section id="spinners">
+		<h1>Spinners</h1>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Spinner">
+				<Fa icon={faSpinner}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Circle Notch">
+				<Fa icon={faCircleNotch}/>
+			</div>
+		</div>
+	</section>
+	<section id="synch">
+		<h1>Synch</h1>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Sync">
+				<Fa icon={faSync}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Sync Alt">
+				<Fa icon={faSyncAlt}/>
 			</div>
 		</div>
 	</section>
