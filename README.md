@@ -1,6 +1,6 @@
 svelte-fa
 Icon Choice - Up TO
-https://fontawesome.com/icons?d=gallery&p=2&c=social&m=free
+https://fontawesome.com/icons?d=gallery&p=2&c=toggle&m=free
 
 Fitness
 Food
