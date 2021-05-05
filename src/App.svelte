@@ -48,21 +48,6 @@
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Tasks">
 				<Fa icon={faTasks}/>
 			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Unordered List">
-				<Fa icon={faListUl}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)">
-				<Fa icon={faClipboardList}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="List">
-				<Fa icon={faList}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="List">
-				<Fa icon={faListAlt}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Ordered List">
-				<Fa icon={faListOl}/>
-			</div>
 		</div>
 	</section>
 	<section>
@@ -71,9 +56,6 @@
 	<section>
 		<h1>Hold Point</h1>
 		<div class="horziontal">
-			<div style="font-size: 2em; color: var(--followup-action-color)">
-				<Fa icon={faBan}/>
-			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)">
 				<Fa icon={faExclamationTriangle}/>
 			</div>
@@ -102,30 +84,12 @@
 	<section id="followup-actions">
 		<h1>Followup Actions</h1>
 		<div class="horziontal">
-			<div style="font-size: 2em; color: var(--followup-action-color)">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Followup Action">
 				<Fa icon={faAsterisk}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)">
-				<Fa icon={faExclamation}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)">
-				<Fa icon={faExclamationTriangle}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)">
-				<Fa icon={faFlag}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)">
-				<Fa icon={faExclamationCircle}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Thumbs Down">
-				<Fa icon={faThumbsDown}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Thumbs Up">
-				<Fa icon={faThumbsUp}/>
 			</div>
 		</div>
 		<div class="horziontal">
-			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Camera">
+			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Camera take Photo of problem">
 				<Fa icon={faCamera}/>
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Images">
@@ -134,7 +98,7 @@
 			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Image">
 				<Fa icon={faImage}/>
 			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="File Image">
+			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Upload File Image of problem">
 				<Fa icon={faFileImage}/>
 			</div>
 		</div>
@@ -142,36 +106,38 @@
 	<section id="users">
 		<h1>Users</h1>
 		<div class="horziontal">
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Users">
-				<Fa icon={faUsers}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Users Settings">
-				<Fa icon={faUsersCog}/>
-			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User">
-				<Fa icon={faUser}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User Settings">
-				<Fa icon={faUserCog}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User Friends">
-				<Fa icon={faUserFriends}/>
-			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User Alt">
 				<Fa icon={faUserAlt}/>
 			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Users">
+				<Fa icon={faUserFriends}/>
+			</div>
+<!--
+			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="Users">
+				<Fa icon={faUsers}/>
+			</div>
+			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="Users Settings">
+				<Fa icon={faUsersCog}/>
+			</div>
+			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="User">
+				<Fa icon={faUser}/>
+			</div>
+			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="User Settings">
+				<Fa icon={faUserCog}/>
+			</div>
+			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="User">
 				<Fa icon={faUserCircle}/>
 			</div>
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User">
+			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="User">
 				<Fa icon={faUserCheck}/>
 			</div>
+			-->
 		</div>
 	</section>
 	<section>
 		<h1>Settings</h1>
 		<div class="horziontal">
-			<div style="font-size: 2em; color: var(--followup-action-color)">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="User and application settings">
 				<Fa icon={faCog}/>
 			</div>
 		</div>
@@ -566,7 +532,8 @@
 	</section>
 </article>
 <main>
-	<h1>Alternative Project Icons</h1>
+	<h1>Available Project Icons</h1>
+	<p>Project Icons chosen from the following</p>
 </main>
 <article>
 	<section id="alt-home">
