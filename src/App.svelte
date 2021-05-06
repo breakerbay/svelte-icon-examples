@@ -28,6 +28,8 @@
 	import { faSpinner, faCircleNotch } from '@fortawesome/free-solid-svg-icons'
 	// Synch
 	import { faSync, faSyncAlt } from '@fortawesome/free-solid-svg-icons'
+	//feather-icons
+	import { CheckSquareIcon, CheckCircleIcon, CheckIcon } from 'svelte-feather-icons'
 </script>
 
 <main>
@@ -45,39 +47,40 @@
 	<section>
 		<h1>Checklist</h1>
 		<div class="horziontal">
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Tasks">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Checklist">
+				<Fa icon={faListUl}/>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h1>Checkpoint</h1>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Checkpoint">
 				<Fa icon={faTasks}/>
 			</div>
 		</div>
 	</section>
 	<section>
-		<h2>Checkpoint</h2>
-	</section>
-	<section>
 		<h1>Hold Point</h1>
 		<div class="horziontal">
-			<div style="font-size: 2em; color: var(--followup-action-color)">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Hold Point">
 				<Fa icon={faExclamationTriangle}/>
 			</div>
 		</div>
 	</section>
 	<section>
-		<h2>Workarea</h2>
-	</section>
-	<section>
-		<h2>Project Location - Place</h2>
-	</section>
-	<section>
 		<h1>Verification</h1>
-		<div style="font-size: 2em; color: var(--followup-action-color)">
-			<Fa icon={faClipboardCheck}/>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Verification Point">
+				<CheckSquareIcon size="35" strokeWidth="2.5"/>
+			</div>
 		</div>
 	</section>
 	<section id="criteria">
 		<h1>Criteria</h1>
 		<div class="horziontal">
-			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Info">
-				<Fa icon={faInfo}/>
+			<div style="font-size: 2em; color: var(--followup-action-color)"  tooltip="Criteria as Ordered List">
+				<Fa icon={faListOl}/>
 			</div>
 		</div>
 	</section>
@@ -103,6 +106,22 @@
 			</div>
 		</div>
 	</section>
+	<section>
+		<h1>Workarea</h1>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Workarea">
+				<Fa icon={faWrench}/>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h1>Project Location</h1>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Project Location">
+				<Fa icon={faMapMarkerAlt}/>
+			</div>
+		</div>
+	</section>
 	<section id="users">
 		<h1>Users</h1>
 		<div class="horziontal">
@@ -112,26 +131,14 @@
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Users">
 				<Fa icon={faUserFriends}/>
 			</div>
-<!--
-			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="Users">
-				<Fa icon={faUsers}/>
+		</div>
+	</section>
+	<section>
+		<h1>Additional Information</h1>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Additional Info">
+				<Fa icon={faInfo}/>
 			</div>
-			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="Users Settings">
-				<Fa icon={faUsersCog}/>
-			</div>
-			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="User">
-				<Fa icon={faUser}/>
-			</div>
-			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="User Settings">
-				<Fa icon={faUserCog}/>
-			</div>
-			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="User">
-				<Fa icon={faUserCircle}/>
-			</div>
-			<div style="font-size: 2em; color: var(&#45;&#45;followup-action-color)" tooltip="User">
-				<Fa icon={faUserCheck}/>
-			</div>
-			-->
 		</div>
 	</section>
 	<section>
@@ -589,8 +596,10 @@
 	</section>
 	<section>
 		<h1>Verification</h1>
-		<div style="font-size: 2em; color: var(--followup-action-color)">
+		<div class="horziontal">
+		<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Verification Point">
 			<Fa icon={faClipboardCheck}/>
+		</div>
 		</div>
 	</section>
 	<section id="alt-criteria">
@@ -1122,6 +1131,8 @@
 	<ul>
 		<li><a href="https://fontawesome.com/icons">Font Awesome Icons</a></li>
 		<li><a href="https://cweili.github.io/svelte-fa/">svelte-fa</a></li>
+		<li><a href="https://feathericons.com/">Feather Icons</a></li>
+		<li><a href="https://github.com/dylanblokhuis/svelte-feather-icons">svelte-feather-icons</a></li>
 	</ul>
 </footer>
 
