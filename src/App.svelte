@@ -1,10 +1,24 @@
 <script>
 	import Fa from 'svelte-fa'
-	import { faAddressBook,faAddressCard,faAsterisk,faAward,faBan,faBell,faBellSlash,faBinoculars,faBook,faBookmark,faBookOpen,faBookReader,faCalendar,faCalendarAlt,faCalendarCheck,faCalendarDay,faCalendarMinus,faCalendarPlus,faCalendarTimes,faCalendarWeek,faCamera,faCameraRetro,faCertificate,faClipboard,faClipboardCheck,faClipboardList,faCog,faEdit,faExclamation,faExclamationCircle,faExclamationTriangle,faFlag,faFaucet,faHome,faInfo,faPencilAlt,faSave,faTasks,faToilet,faToiletPaper,faToiletPaperSlash,faVideo,faVideoSlash } from '@fortawesome/free-solid-svg-icons'
+	// Home
+	import { faHome } from '@fortawesome/free-solid-svg-icons'
+	import { HomeIcon } from 'svelte-feather-icons'
+
+	//Checklist
+	import { faList,faListAlt,faListOl,faListUl } from '@fortawesome/free-solid-svg-icons'
+	import { ListIcon } from 'svelte-feather-icons'
+
+	//Hold Point
+	import { faExclamation,faExclamationCircle,faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
+	import { AlertCircleIcon, AlertOctagonIcon, AlertTriangleIcon } from 'svelte-feather-icons'
+
+	import { faAddressBook,faAddressCard,faAsterisk,faAward,faBan,faBell,faBellSlash,faBinoculars,faBook,faBookmark,faBookOpen,faBookReader,faCalendar,faCalendarAlt,faCalendarCheck,faCalendarDay,faCalendarMinus,faCalendarPlus,faCalendarTimes,faCalendarWeek,faCamera,faCameraRetro,faCertificate,faClipboard,faClipboardCheck,faClipboardList,faCog,faEdit,faFlag,faFaucet,faInfo,faPencilAlt,faSave,faTasks,faToilet,faToiletPaper,faToiletPaperSlash,faVideo,faVideoSlash } from '@fortawesome/free-solid-svg-icons'
 	//Followup Actions
 	import { faFileImage,faImage, faImages } from '@fortawesome/free-solid-svg-icons'
 	//Users
 	import { faUsers, faUsersCog, faUser,faUserCog, faUserFriends, faUserAlt,faUserCircle,faUserCheck } from '@fortawesome/free-solid-svg-icons'
+	//feather-icons Users
+	import { UserCheckIcon, UserIcon, UserMinusIcon, UserPlusIcon, UsersIcon, UserXIcon } from 'svelte-feather-icons'
 	//Comments
 	import { faComment,faCommentDots,faCommentAlt,faComments,faQuoteLeft,faQuoteRight,faThumbsDown, faThumbsUp} from '@fortawesome/free-solid-svg-icons'
 	import { faDesktop,faMobileAlt } from '@fortawesome/free-solid-svg-icons'
@@ -12,8 +26,7 @@
 	import { faToggleOff, faToggleOn, faCheckCircle, faCircle } from '@fortawesome/free-solid-svg-icons'
 	import { faFilePdf, faSearch, faTrash,faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 	import { faPlus, faPlusCircle, faPlusSquare, faMinus, faMinusCircle, faMinusSquare } from '@fortawesome/free-solid-svg-icons'
-	//Checklist
-	import { faList,faListAlt,faListOl,faListUl } from '@fortawesome/free-solid-svg-icons'
+	import { EditIcon, Edit2Icon, Edit3Icon } from 'svelte-feather-icons'
 	//House
 	import { faCat, faChair, faCouch, faKey, faLightbulb, faSpider, faWheelchair, faWifi, faShower, faTv} from '@fortawesome/free-solid-svg-icons'
 	import { faAccessibleIcon} from '@fortawesome/free-brands-svg-icons'
@@ -30,6 +43,7 @@
 	import { faSync, faSyncAlt } from '@fortawesome/free-solid-svg-icons'
 	//feather-icons
 	import { CheckSquareIcon, CheckCircleIcon, CheckIcon } from 'svelte-feather-icons'
+
 </script>
 
 <main>
@@ -42,6 +56,9 @@
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Home">
 				<Fa icon={faHome}/>
 			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers HomeIcon">
+				<HomeIcon size="35" strokeWidth="2.5"/>
+			</div>
 		</div>
 	</section>
 	<section>
@@ -49,6 +66,9 @@
 		<div class="horziontal">
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Checklist">
 				<Fa icon={faListUl}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers ListIcon">
+				<ListIcon size="35" strokeWidth="2.5"/>
 			</div>
 		</div>
 	</section>
@@ -60,9 +80,15 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="hold-point">
 		<h1>Hold Point</h1>
 		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers AlertCircleIcon">
+				<AlertCircleIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers AlertTriangleIcon">
+				<AlertTriangleIcon size="35" strokeWidth="2.5"/>
+			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Hold Point">
 				<Fa icon={faExclamationTriangle}/>
 			</div>
@@ -130,6 +156,12 @@
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Users">
 				<Fa icon={faUserFriends}/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers UserIcon">
+				<UserIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers UsersIcon">
+				<UsersIcon size="35" strokeWidth="2.5"/>
 			</div>
 		</div>
 	</section>
@@ -280,6 +312,18 @@
 				<Fa icon={faCircle}/>
 			</div>
 		</div>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers EditIcon">
+				<EditIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers Edit2Icon">
+				<Edit2Icon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers Edit3Icon">
+				<Edit3Icon size="35" strokeWidth="2.5"/>
+			</div>
+		</div>
+
 	</section>
 	<section id="calendar">
 		<h1>Calendar</h1>
@@ -577,7 +621,7 @@
 	<section>
 		<h2>Checkpoint</h2>
 	</section>
-	<section>
+	<section id="alt-hold-point">
 		<h1>Hold Point</h1>
 		<div class="horziontal">
 			<div style="font-size: 2em; color: var(--followup-action-color)">
@@ -585,6 +629,17 @@
 			</div>
 			<div style="font-size: 2em; color: var(--followup-action-color)">
 				<Fa icon={faExclamationTriangle}/>
+			</div>
+		</div>
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers AlertTriangleIcon">
+				<AlertTriangleIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers AlertCircleIcon">
+				<AlertCircleIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="Feathers AlertOctagonIcon">
+				<AlertOctagonIcon size="35" strokeWidth="2.5"/>
 			</div>
 		</div>
 	</section>
@@ -678,6 +733,29 @@
 				<Fa icon={faUserCheck}/>
 			</div>
 		</div>
+
+<!-- UserCheckIcon, UserIcon, UserMinusIcon, UserPlusIcon, UsersIcon, UserXIcon -->
+		<div class="horziontal">
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="UserCheckIcon">
+				<UserCheckIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="UserIcon">
+				<UserIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="UserMinusIcon">
+				<UserMinusIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="UserPlusIcon">
+				<UserPlusIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="UsersIcon">
+				<UsersIcon size="35" strokeWidth="2.5"/>
+			</div>
+			<div style="font-size: 2em; color: var(--followup-action-color)" tooltip="UserXIcon">
+				<UserXIcon size="35" strokeWidth="2.5"/>
+			</div>
+		</div>
+
 	</section>
 	<section>
 		<h1>Settings</h1>
