@@ -1,9 +1,11 @@
-svelte-fa
-Icon Choice - Up TO
-https://fontawesome.com/icons?d=gallery&p=2&c=toggle&m=free
+# svelte-icon-examples
 
-Fitness
-Food
+A simple Svelte based application for demonstrating icons
+
+Currently using icons from 
+* (Font Awesome)[https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free] 
+* (Feather Icons)[https://feathericons.com/]
+
 
 #Demo
 
