@@ -11,6 +11,7 @@ Other icon sites to investigate
 * [Svelte.js Icons](https://bestofsvelte.com/t/icons)
 * [Svelte Icons](https://svelte-icons-explorer.vercel.app/) includes Gaming icons
 * [Carbon Icons Svelte](https://ibm.github.io/carbon-icons-svelte/)
+* [Sveltestrap Icons](https://sveltestrap.js.org/?path=/story/components--icon)
 
 # Demo 
 
