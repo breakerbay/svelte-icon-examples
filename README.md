@@ -8,6 +8,7 @@ Currently using icons from
 
 Other icon sites to investigate
 * [Simple Icons](https://simpleicons.org/)
+* [Svelte.js Icons](https://bestofsvelte.com/t/icons)
 
 # Demo 
 
