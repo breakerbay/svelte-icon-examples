@@ -9,7 +9,8 @@ Currently using icons from
 Other icon sites to investigate
 * [Simple Icons](https://simpleicons.org/)
 * [Svelte.js Icons](https://bestofsvelte.com/t/icons)
-* [Svelte Icons](https://svelte-icons-explorer.vercel.app/)
+* [Svelte Icons](https://svelte-icons-explorer.vercel.app/) includes Gaming icons
+* [Carbon Icons Svelte](https://ibm.github.io/carbon-icons-svelte/)
 
 # Demo 
 
