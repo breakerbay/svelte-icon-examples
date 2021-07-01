@@ -6,6 +6,8 @@ Currently using icons from
 * [Font Awesome](https://fontawesome.com/v5.15/icons?d=gallery&p=2&m=free)
 * [Feather Icons](https://feathericons.com/)
 
+Other icon sites to investigate
+* [Simple Icons](https://simpleicons.org/)
 
 # Demo 
 
