@@ -18,3 +18,7 @@ Other icon sites to investigate
 Deployed to https://svelte-icon-examples.netlify.app/
 
 [https://svelte-icon-examples.netlify.app/](https://svelte-icon-examples.netlify.app/)
+
+# SVG Icons
+
+* [freeicons.io](https://freeicons.io/) - Can search over a large range of SVG Icons
